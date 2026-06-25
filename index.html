@@ -42,29 +42,56 @@ line-height:1.6;
 }
 
 header{
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
     width:100%;
+    padding:18px 40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(20,20,20,0.65);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    box-sizing:border-box;
     z-index:1000;
-    padding:20px 0;
 }
 
 nav{
     display:flex;
-    justify-content:center;
-    gap:30px;
+    gap:35px;
+    align-items:center;
 }
 
 nav a{
-    color:white;
+    position:relative;
+    color:#ffffff;
     text-decoration:none;
+    font-size:16px;
     font-weight:600;
+    letter-spacing:0.5px;
     transition:0.3s;
+    padding-bottom:8px;
 }
 
 nav a:hover{
-    color:#D35400;
+    color:#E67E22;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0;
+    height:3px;
+    background:#E67E22;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+nav a:hover::after{
+    width:100%;
 }
 
 .logo img{
@@ -195,17 +222,20 @@ font-size:38px;
 
 <body>
 
-<!-- Header hidden temporarily -->
+<header>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="cafes.html">Cafes</a>
-    <a href="restaurants.html">Restaurants</a>
-    <a href="street-food.html">Street Food</a>
-    <a href="hidden-gems.html">Hidden Gems</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+   <a href="index.html" class="active">Home</a>
+   <a href="cafes.html">Cafes</a>
+   <a href="restaurants.html">Restaurants</a>
+   <a href="street-food.html">Street Food</a>
+   <a href="hidden-gems.html">Hidden Gems</a>
+   <a href="about.html">About</a>
+   <a href="contact.html">Contact</a>
 </nav>
+
+</header>
+
 
 <section class="hero">
     <a href="https://instagram.com/bangaloremasala"
