@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bangalore Masala</title>
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
   .hero{
     position:relative;
@@ -35,29 +35,36 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Arial,sans-serif;
+font-family: 'Poppins', sans-serif;
 background:#fafafa;
 color:#333;
 line-height:1.6;
 }
 
 header{
-background:transparent;
-color:white;
-padding:20px;
-position:absolute;
-width:100%;
-top:0;
-left:0;
-z-index:1000;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    padding:20px 0;
 }
 
 nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-max-width:1100px;
-margin:auto;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#D35400;
 }
 
 .logo img{
@@ -108,14 +115,14 @@ font-weight:bold;
 }
 
 .section{
-max-width:1100px;
-margin:auto;
-padding:70px 20px;
+    padding:90px 20px;
+    text-align:center;
 }
 
 .section h2{
-text-align:center;
-margin-bottom:40px;
+    font-size:42px;
+    margin-bottom:20px;
+    font-weight:700;
 }
 
 .grid{
@@ -151,12 +158,54 @@ margin-top:50px;
 font-size:38px;
 }
 }
+/* Mobile Version */
+@media (max-width: 768px) {
+
+    .hero{
+        height:100vh;
+        background-image:url('Images/hero-mobile.jpg');
+        background-size:cover;
+        background-position:center;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        gap:15px;
+        font-size:14px;
+        padding:10px;
+    }
+
+    .section h2{
+        font-size:30px;
+    }
+
+    .section p{
+        font-size:18px;
+        padding:0 15px;
+    }
+
+.hero-button{
+    left:15%;
+    bottom:8%;
+    width:70%;
+    height:60px;
+}
 </style>
 </head>
 
 <body>
 
 <!-- Header hidden temporarily -->
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="cafes.html">Cafes</a>
+    <a href="restaurants.html">Restaurants</a>
+    <a href="street-food.html">Street Food</a>
+    <a href="hidden-gems.html">Hidden Gems</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
 <section class="hero">
     <a href="https://instagram.com/bangaloremasala"
