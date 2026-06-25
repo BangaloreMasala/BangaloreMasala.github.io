@@ -6,6 +6,28 @@
 <title>Bangalore Masala</title>
 
 <style>
+  .hero{
+    position:relative;
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)),
+    url('Images/hero.jpg');
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-button{
+    position:absolute;
+
+    left:12%;
+    bottom:10%;
+    width:320px;
+    height:90px;
+
+    display:block;
+}
 *{
 margin:0;
 padding:0;
@@ -20,11 +42,14 @@ line-height:1.6;
 }
 
 header{
-background:#111;
+background:transparent;
 color:white;
 padding:20px;
-position:sticky;
+position:absolute;
+width:100%;
 top:0;
+left:0;
+z-index:1000;
 }
 
 nav{
@@ -41,21 +66,34 @@ width:auto;
 }
 
 .hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.45),
+rgba(0,0,0,0.45)),
+url('Images/hero.jpg');
+
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:100px 20px;
-background:white;
+color:white;
+padding:20px;
+}
+
+.hero-content{
+max-width:800px;
 }
 
 .hero h1{
-font-size:52px;
-margin-bottom:15px;
+font-size:60px;
+margin-bottom:20px;
 }
 
 .hero p{
-font-size:20px;
-max-width:700px;
-margin:auto;
-color:#666;
+font-size:24px;
+color:white;
 }
 
 .btn{
@@ -118,24 +156,24 @@ font-size:38px;
 
 <body>
 
-<header>
-<nav>
-<div class="logo">
-  <img src="logo.png" alt="Bangalore Masala Logo" height="60">
-</div>
-</nav>
-</header>
+<!-- Header hidden temporarily -->
 
 <section class="hero">
-<h1>Discover Bangalore One Bite, One Place, One Story At A Time</h1>
+    <a href="https://instagram.com/bangaloremasala"
+       target="_blank"
+       class="hero-button"
+       aria-label="Follow Bangalore Masala on Instagram">
+    </a>
+</section>
 
-<p>
+<h2 style="text-align:center;">
+Discover Bangalore - One Bite, One Place, One Story At A Time
+</h2>
+
+<p style="text-align:center; max-width:800px; margin:auto; font-size:20px;">
 Bangalore Masala brings you the city's best food, cafes, hidden gems, local experiences and a little bit of fun along the way.
 </p>
 
-<a class="btn" href="https://instagram.com/bangaloremasala" target="_blank">
-Follow @bangaloremasala
-</a>
 </section>
 
 <section class="section">
