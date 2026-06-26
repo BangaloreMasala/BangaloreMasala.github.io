@@ -223,7 +223,9 @@ margin-top:50px;
 
 /* Mobile Version */
 @media (max-width:768px){
-
+.featured-card{
+    flex:0 0 85%;
+}
 header{
     justify-content:space-between;
     padding:15px 20px;
@@ -289,20 +291,26 @@ to{
 
 }
 .featured-grid{
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:30px;
-    max-width:1000px;
-    margin:50px auto;
+    display:flex;
+    gap:25px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    padding:20px 10px;
+    scrollbar-width:none;
+}
+
+.featured-grid::-webkit-scrollbar{
+    display:none;
 }
 
 .featured-card{
+    flex:0 0 350px;
     background:white;
     border-radius:18px;
     overflow:hidden;
     box-shadow:0 12px 30px rgba(0,0,0,.12);
     transition:.3s;
-    width:100%;
+    scroll-snap-align:start;
 }
 
 
