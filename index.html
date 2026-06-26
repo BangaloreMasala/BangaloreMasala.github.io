@@ -287,23 +287,28 @@ to{
     height:60px;
 }
 
+.featured-grid{
+    grid-template-columns:1fr;
+}
+
 }
 .featured-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:35px;
-    margin-top:50px;
+    grid-template-columns:repeat(2, 1fr);
+    gap:30px;
+    max-width:1000px;
+    margin:50px auto;
 }
 
 .featured-card{
-    max-width:380px;
-    margin:auto;
     background:white;
     border-radius:18px;
     overflow:hidden;
     box-shadow:0 12px 30px rgba(0,0,0,.12);
     transition:.3s;
+    width:100%;
 }
+
 
 .featured-card:hover{
     transform:translateY(-8px);
@@ -460,8 +465,35 @@ Bangalore Masala brings you the city's best food, cafes, hidden gems, local expe
             </div>
 
         </div>
+<div class="featured-card">
+
+    <a href="https://www.instagram.com/reel/DZ-BBp_PZ1T/?igsh=MW40OTVwYnBpbjMwYw==" target="_blank">
+
+        <img src="Images/karims-delhi6.jpg" alt="Karim's Delhi 6">
+
+    </a>
+
+    <div class="featured-content">
+
+        <span class="badge">🍽️ Featured Restaurant</span>
+
+        <h3>Karim's Delhi 6</h3>
+
+        <p>📍 Bangalore</p>
+
+        <a class="watch-btn"
+           href="https://www.instagram.com/reel/DZ-BBp_PZ1T/?igsh=MW40OTVwYnBpbjMwYw=="
+           target="_blank">
+
+           🎥 Watch on Instagram
+
+        </a>
 
     </div>
+
+</div>
+
+    
 
 </section>
 
