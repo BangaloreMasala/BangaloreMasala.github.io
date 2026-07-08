@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,113 +8,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:'Poppins',sans-serif;
-background:#fafafa;
-color:#333;
-}
-
-header{
-background:#111;
-padding:18px;
-text-align:center;
-}
-
-header a{
-color:white;
-text-decoration:none;
-font-weight:600;
-margin:0 18px;
-}
-
-.hero{
-height:40vh;
-background:
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-url("Images/hero.jpg");
-
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-color:white;
-text-align:center;
-}
-
-.hero h1{
-font-size:55px;
-}
-
-.section{
-padding:70px 20px;
-max-width:1100px;
-margin:auto;
-}
-
-.restaurant-card{
-background:white;
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,.12);
-}
-
-.restaurant-card img{
-width:100%;
-display:block;
-}
-
-.content{
-padding:25px;
-}
-
-.badge{
-display:inline-block;
-background:#D35400;
-color:white;
-padding:8px 16px;
-border-radius:30px;
-font-size:14px;
-font-weight:600;
-margin-bottom:20px;
-}
-
-.watch-btn{
-display:inline-block;
-margin-top:20px;
-background:#E1306C;
-color:white;
-text-decoration:none;
-padding:12px 22px;
-border-radius:8px;
-font-weight:bold;
-}
-
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:60px;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:36px;
-}
-
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -123,13 +16,27 @@ font-size:36px;
 
 <header>
 
+<nav>
+
 <a href="index.html">Home</a>
 <a href="cafes.html">Cafes</a>
 <a href="restaurants.html">Restaurants</a>
+<a href="street-food.html">Street Food</a>
+<a href="hidden-gems.html">Hidden Gems</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<div class="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
 
 </header>
 
-<section class="hero">
+<section class="hero page-hero">
 
 <h1>Restaurants in Bangalore</h1>
 
@@ -137,25 +44,23 @@ font-size:36px;
 
 <section class="section">
 
-<div class="restaurant-card">
-
-<img src="Images/karims-delhi6.jpg" alt="Karim's Delhi 6">
-
-<div class="content">
-
-<span class="badge">🍽️ Featured Restaurant</span>
-
 <h2>Karim's Delhi 6</h2>
-
-<p><strong>📍 Frazer Town</strong></p>
 
 <br>
 
+<div class="page-card">
+
+<img src="Images/karims-delhi6.jpg" alt="Karim's Delhi 6">
+
+<div class="page-content"></div>
+
 <p>
-
 Serving authentic Mughlai and North Indian cuisine, Karim's Delhi 6 is known for its rich flavours, kebabs, biryanis and traditional recipes.
-
 </p>
+
+<br>
+
+<p>📍 St Marks Road</p>
 
 <a class="watch-btn"
 href="https://www.instagram.com/reel/DZ-BBp_PZ1T/?igsh=MW40OTVwYnBpbjMwYw=="
@@ -176,6 +81,8 @@ target="_blank">
 <p>© 2026 Bangalore Masala</p>
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
