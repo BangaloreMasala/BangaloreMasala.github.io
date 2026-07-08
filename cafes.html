@@ -8,100 +8,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    background:#fafafa;
-    color:#333;
-}
-
-header{
-    background:#111;
-    padding:18px;
-    text-align:center;
-}
-
-header a{
-    color:white;
-    text-decoration:none;
-    font-weight:600;
-    margin:0 18px;
-}
-
-.hero{
-    height:40vh;
-    background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-    url("Images/hero.jpg");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:white;
-    text-align:center;
-}
-
-.hero h1{
-    font-size:55px;
-}
-
-.section{
-    padding:70px 20px;
-    max-width:1100px;
-    margin:auto;
-}
-
-.featured-card{
-    background:white;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,.12);
-}
-
-.featured-card img{
-    width:100%;
-    display:block;
-}
-
-.featured-content{
-    padding:25px;
-}
-
-.watch-btn{
-    display:inline-block;
-    margin-top:20px;
-    background:#E1306C;
-    color:white;
-    text-decoration:none;
-    padding:12px 22px;
-    border-radius:8px;
-}
-
-footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:30px;
-    margin-top:60px;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-    font-size:36px;
-}
-
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -109,12 +16,27 @@ footer{
 
 <header>
 
+<nav>
+
 <a href="index.html">Home</a>
 <a href="cafes.html">Cafes</a>
+<a href="restaurants.html">Restaurants</a>
+<a href="street-food.html">Street Food</a>
+<a href="hidden-gems.html">Hidden Gems</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<div class="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
 
 </header>
 
-<section class="hero">
+<section class="hero page-hero">
 
 <h1>Cafes in Bangalore</h1>
 
@@ -126,11 +48,11 @@ footer{
 
 <br>
 
-<div class="featured-card">
+<div class="page-card">
 
 <img src="Images/anaia-cafe.jpg" alt="Anaia Cafe">
 
-<div class="featured-content">
+<div class="page-content">
 
 <p>
 A beautiful café in Indiranagar known for its elegant ambience, great coffee and relaxing atmosphere.
@@ -159,6 +81,8 @@ target="_blank">
 <p>© 2026 Bangalore Masala</p>
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
